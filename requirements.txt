@@ -1,4 +1,8 @@
 marimo
+marimo[sql]
+marimo[recommanded]
+psycopg
+sqlachemy
 plotly
 geopandas
 pandas
