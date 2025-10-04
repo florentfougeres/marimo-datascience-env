@@ -2,7 +2,7 @@ marimo
 marimo[sql]
 marimo[recommanded]
 psycopg
-sqlachemy
+SQLAlchemy
 plotly
 geopandas
 pandas
