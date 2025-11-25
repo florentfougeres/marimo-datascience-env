@@ -1,0 +1,21 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.18.0"
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "dc3950dec7089d546ffacf60a897de51",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}

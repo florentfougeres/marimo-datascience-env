@@ -31,3 +31,35 @@ docker run -it --rm \
 
 Once running, Marimo is available at:  
 👉 `http://localhost:8080`
+
+## Run as a service
+
+`/etc/systemd/system/marimo.service`
+
+```service
+[Unit]
+Description=Marimo Notebook Server
+After=network.target
+
+[Service]
+Type=simple
+User=florent
+WorkingDirectory=/home/florent/marimo-datascience-env
+Environment="PATH=/home/florent/marimo-datascience-env/.data/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+Environment="VIRTUAL_ENV=/home/florent/marimo-datascience-env/.data"
+ExecStart=/home/florent/marimo-datascience-env/.data/bin/python -m marimo edit --host 0.0.0.0 --port 8080 --no-token
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Then :
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable marimo.service
+sudo systemctl start marimo.service
+sudo systemctl status marimo.service 
+```
