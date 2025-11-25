@@ -16,6 +16,19 @@
         }
       ],
       "console": []
+    },
+    {
+      "id": "sTkv",
+      "code_hash": "fd352b68bf83391284e044021cab0339",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
     }
   ]
 }
